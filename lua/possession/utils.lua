@@ -227,7 +227,7 @@ function M.delete_all_buffers(force)
         end
     end
     vim.api.nvim_buf_delete(current_buffer, { force = force })
-    vim.lsp.stop_client(lsp_get_clients())
+    --- vim.lsp.stop_client(lsp_get_clients())
 end
 
 ---@param mod string
